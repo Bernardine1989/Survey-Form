@@ -1,0 +1,140 @@
+/*======================================
+RESET
+======================================*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 100%;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    font-family: Manjari, sans-serif;
+    font-weight: 300;
+}
+
+/*======================================
+REUSABLE STYLES
+======================================*/
+
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    height: 1px;
+    background: #e6e6e6;
+    margin: 20px 0;
+}
+
+/*======================================
+HEADER
+======================================*/
+
+.hero {
+    padding: 60px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 100;
+}
+
+#description {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.4em;
+    line-height: 125%;
+}
+
+/*======================================
+FORM
+======================================*/
+
+.label {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.input {
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+
+#rec {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 5px;
+
+}
+
+button[type='submit'] {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 5px;
+    border-radius: 10px;
+    border: none;
+    background: #8e44ad;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#text {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+}
+
+#improve {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+
+/*======================================
+MEDIA QUERIES
+======================================*/
+
+@media (min-width: 960px) {
+    html {
+        background: url("../res/code.jpg");
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+        background: #fff;
+    }
+}

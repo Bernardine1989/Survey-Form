@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bernardine's Survey Form</title>
+    <!--   CSS     -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--   FONTS     -->
+    <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flexbox hero">
+        <div class="row">
+            <h1 id="title">Survey Form</h1>
+            <div class="line"></div>
+            <p id="description">Please complete the survey below, this will allow us to improve our services based on the feedback received.</p>
+        </div>
+    </header>
+    <main>
+        <form method="post" action="#" id="survey-form" class="row">
+            <div class="label">
+                <label id="name-label" for="name">Name: </label>
+            </div>
+            <div class="input">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+            </div>
+            <div class="label">
+                <label id="email-label" for="email">Email: </label>
+            </div>
+            <div class="input">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+            </div>
+            <div class="label">
+                <label id="number-label" for="age">Age: </label>
+            </div>
+            <div class="input">
+                <input type="number" id="number" name="num" min="18" max="80" placeholder="Enter Your Age" />
+            </div>
+            <div class="label">
+                <label for="dropdown">Which option best describes your current role?</label>
+            </div>
+            <div class="dropdown">
+                <select id="dropdown">
+                    <option>Student</option>
+                    <option>Full time Job</option>
+                    <option>Student</option>
+                    <option>Student</option>
+                </select>
+            </div>
+            <div class="label">
+                <label id="rec" for="rec">How likely are you to recommend us to a friend? </label>
+            </div>
+            <div class="input">
+                <input type="radio" id="very-likely" name="rec" value="very" checked /> Very Likely
+            </div>
+            <div class="input">
+                <input type="radio" id="maybe" name="rec" value="maybe" /> Maybe
+            </div>
+            <div class="input">
+                <input type="radio" id="not-likely" name="rec" value="not-likely" /> Not Likely
+            </div>
+            <div class="label">
+                <label id="dd2" for="dropdown2">What do you like most about us? </label>
+            </div>
+            <div class="dropdown">
+                <select id="dropdown2">
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+            </div>
+            <div class="label">
+                <label id="improve" for="improve">What can we improve on?</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve1" name="improve" value="font-end-projects" />Front-End Projects
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve2" name="improve" value="back-end-projects" />Back-End Projects
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve3" name="improve" value="data-visualization" />Data Visualization
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve4" name="improve" value="challenges" />Challenges
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve5" name="improve" value="open-source-community" />Open Source Community
+            </div>
+            <div class="input">
+                <input type="checkbox" id="improve6" name="improve" value="gitter-help-room" />Gitter Help Room
+            </div>
+            <div class="label">
+                <label id="txt" for="text">Message or Comments </label>
+            </div>
+            <div class="message-area">
+                <textarea id="text"></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+</body></html>
